@@ -1,135 +1,191 @@
 import { type } from "os";
 
 type CategoryType = 'anime'|'serie'|'movie';
-//type PetSex = 'Masculino'| 'Feminino'
 
 type Category =  {
     type: CategoryType,
     image: string,
     name: string,
     author:string,
-    //sex: PetSex
+    year: number
 };
 
 const data: Category[] = [
     {
         type: 'anime',
-        image: 'pastor-alemao.jpg',
-        name: 'Pastor-alemão',
+        image: 'akami_ga_kill.jpg',
+        name: 'Akami ga Kill',
         author: 'Amarelo e Preto',
-        //sex: 'Masculino'
+        year: 2026
     },
     {
         type: 'anime',
-        image: 'labrador.jpg',
-        name: 'Labrador-retriever',
+        image: 'animatrix.jpg',
+        name: 'Animatrix',
         author: 'Branco',
-        //sex: 'Masculino'
+        year: 2026
     },
     {
         type: 'anime',
-        image: 'zwergspitz.jpg',
-        name: 'Zwergspitz',
+        image: 'another.jpg',
+        name: 'Another',
         author: 'Amarelo',
-        //sex: 'Feminino'
+        year: 2026
     },
     {
         type: 'anime',
-        image: 'husky.jpg',
-        name: 'Husky Siberiano',
+        image: 'fullmetal_alchemist.jpg',
+        name: 'Fullmetal Alchemist',
         author: 'Branco e Preto',
-        //sex: 'Masculino'
+        year: 2026
     },
     {
         type: 'anime',
-        image: 'golden.jpg',
-        name: 'Golden Retriever',
+        image: 'death_note.jpg',
+        name: 'Death Note',
         author: 'Amarelo',
-        //sex: 'Masculino'
+        year: 2026
     },
     {
         type: 'anime',
-        image: 'poodle.jpg',
-        name: 'Poodle',
+        image: 'my_hero_academia.jpg',
+        name: 'My Hero Academia',
         author: 'Branco',
-        //sex: 'Feminino'
+        year: 2026
     },
     {
         type: 'anime',
-        image: 'bulldog.jpg',
-        name: 'Bulldog',
+        image: 'tokyo_ghoul.jpg',
+        name: 'Tokyo Ghoul',
         author: 'Branco e Amarelo',
-        //sex: 'Masculino'
+        year: 2026
+    },
+    {
+        type: 'anime',
+        image: 'nanatsu_no_tazai.jpg',
+        name: 'Nanatsu no Tazai',
+        author: 'Branco e Amarelo',
+        year: 2026
     },
     {
         type: 'serie',
-        image: 'persa.jpg',
-        name: 'Persa',
+        image: 'startup.jpg',
+        name: 'StartUp',
         author: 'Amarelo',
-        //sex: 'Masculino'
+        year: 2026
     },
     {
         type: 'serie',
-        image: 'mainecoon.jpg',
-        name: 'Maine Coon',
-        author: 'Preto e Branco',
-        //sex: 'Masculino'
-    },
-    {
-        type: 'serie',
-        image: 'bengal.jpg',
-        name: 'Bengal',
+        image: 'game_of_thrones.jpg',
+        name: 'Game of Thrones',
         author: 'Branco, Preto e Amarelo',
-        //sex: 'Feminino'
+        year: 2026
     },
     {
         type: 'serie',
-        image: 'siames.jpg',
-        name: 'Siamês',
-        author: 'Amarelo e Preto',
-        //sex: 'Masculino'
-    },
-    {
-        type: 'serie',
-        image: 'sphynx.jpg',
-        name: 'Sphynx',
-        author: 'Branco',
-        //sex: 'Masculino'
-    },
-    {
-        type: 'movie',
-        image: 'neon.jpg',
-        name: 'Tetra Neon',
-        author: 'Vermelho e Azul',
-        //sex: 'Masculino'
-    },
-    {
-        type: 'movie',
-        image: 'matogrosso.jpg',
-        name: 'Mato Grosso',
-        author: 'Laranja',
-        //sex: 'Masculino'
-    },
-    {
-        type: 'movie',
-        image: 'limpavidro.jpg',
-        name: 'Limpa Vidro',
-        author: 'Verde e Branco',
-        //sex: 'Masculino'
-    },
-    {
-        type: 'movie',
-        image: 'tanictis.jpg',
-        name: 'Tanictis',
-        author: 'Vermelho',
-        //sex: 'Masculino'
-    },
-    {
-        type: 'movie',
         image: 'house-the-dragon.jpg',
-        name: 'A Casa do Dragão',
+        name: 'House of the Dragon',
+        author: 'Amarelo e Preto',
+        year: 2026
+    },
+    
+    {
+        type: 'serie',
+        image: 'la_casa_de_papel.jpg',
+        name: 'La Casa de Papel',
+        author: 'Branco',
+        year: 2026
+    },
+    {
+        type: 'serie',
+        image: 'mandalorian.jpg',
+        name: 'The Mandalorian',
+        author: 'Branco',
+        year: 2026
+    },
+    {
+        type: 'serie',
+        image: 'mr_robot.jpg',
+        name: 'Mr. Robot',
+        author: 'Branco',
+        year: 2026
+    },
+    {
+        type: 'serie',
+        image: 'silicon_valley.jpg',
+        name: 'Silicon Valley',
+        author: 'Branco',
+        year: 2026
+    },
+    {
+        type: 'movie',
+        image: 'snowden.jpg',
+        name: 'Snowden: Herói ou Traidor',
+        author: 'Laranja',
+        year: 2026
+    },
+    {
+        type: 'movie',
+        image: 'matrix.jpg',
+        name: 'Matrix',
+        author: 'Vermelho e Azul',
+        year: 2026
+    },
+    {
+        type: 'movie',
+        image: 'matrix_reloaded.jpg',
+        name: 'Matrix Reloaded',
+        author: 'Laranja',
+        year: 2026
+    },
+    {
+        type: 'movie',
+        image: 'matrix_revolutions.jpg',
+        name: 'Matrix Revolutions',
+        author: 'Verde e Branco',
+        year: 2026
+    },
+    {
+        type: 'movie',
+        image: 'ameaca_fantasma.jpg',
+        name: 'A Ameaca Fantasma',
+        author: 'Vermelho',
+        year: 2026
+    },
+    {
+        type: 'movie',
+        image: 'ascensao_skywalker.jpg',
+        name: 'A Ascensao Skywalker',
         author: 'Preto',
-        //sex: 'Masculino'
+        year: 2026
+    },
+    {
+        type: 'movie',
+        image: 'despertar_forca.jpg',
+        name: 'O Despertar da Força',
+        author: 'Preto',
+        year: 2026
+    },
+    {
+        type: 'movie',
+        image: 'rogue_one.jpg',
+        name: 'Rogue One',
+        author: 'Preto',
+        year: 2026
+    },
+    {
+        type: 'movie',
+        image: 'ultimos_jedi.jpg',
+        name: 'Os Ultimos Jedi',
+        author: 'Preto',
+        year: 2026
+    },
+    {
+        type: 'movie',
+        image: 'vinganca_sith.jpg',
+        name: 'A Vinganca dos Sith',
+        author: 'Preto',
+        year: 2026
     },
 ]
 
