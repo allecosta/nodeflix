@@ -1,7 +1,8 @@
 # NodeFlix
 
-Projeto de demonstração relacionado ao NodeFlix, que apresenta meus animes, séries, filmes e bandas que
-fazem parte da minha vida.
+Projeto de demonstração relacionado ao NodeFlix, que apresenta alguns dos meus animes, séries e filmes que fazem parte da minha vida ao longo do caminho.
+
+![screenshot](/public/images/readme.png)
 
 ## Tecnologias Utilizadas 🚀
 
