@@ -106,8 +106,8 @@ h2 {
     margin-bottom: 5px;
 }
 .item--type,
-.item--color,
-.item--genre {
+.item--author,
+.item--year {
     font-size: 13px;
     color: var(--lighter);
     margin-bottom: 3px;
