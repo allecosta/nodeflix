@@ -1,6 +1,6 @@
 :root {
     --pagebg: #FFF;
-    --main: #102581;
+    --main: #1ba673;
     --bglink: rgba(0, 0, 0, 0.3);
     --darkbg: #FFF;
     --lightbg: #000;
@@ -106,8 +106,8 @@ h2 {
     margin-bottom: 5px;
 }
 .item--type,
-.item--color,
-.item--genre {
+.item--author,
+.item--year {
     font-size: 13px;
     color: var(--lighter);
     margin-bottom: 3px;

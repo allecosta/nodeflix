@@ -1,135 +1,191 @@
-import { type } from "os";
+//import { type } from "os";
 
 type CategoryType = 'anime'|'serie'|'movie';
-//type PetSex = 'Masculino'| 'Feminino'
 
 type Category =  {
     type: CategoryType,
     image: string,
     name: string,
     author:string,
-    //sex: PetSex
+    year: number
 };
 
 const data: Category[] = [
     {
         type: 'anime',
-        image: 'pastor-alemao.jpg',
-        name: 'Pastor-alemão',
-        author: 'Amarelo e Preto',
-        //sex: 'Masculino'
+        image: 'akami_ga_kill.jpg',
+        name: 'Akami ga Kill',
+        author: 'Makoto Uezu',
+        year: 2014
     },
     {
         type: 'anime',
-        image: 'labrador.jpg',
-        name: 'Labrador-retriever',
-        author: 'Branco',
-        //sex: 'Masculino'
+        image: 'animatrix.jpg',
+        name: 'Animatrix',
+        author: 'The Wachowskis',
+        year: 2003
     },
     {
         type: 'anime',
-        image: 'zwergspitz.jpg',
-        name: 'Zwergspitz',
-        author: 'Amarelo',
-        //sex: 'Feminino'
+        image: 'another.jpg',
+        name: 'Another',
+        author: 'Tsutomu Mizushima',
+        year: 2012
     },
     {
         type: 'anime',
-        image: 'husky.jpg',
-        name: 'Husky Siberiano',
-        author: 'Branco e Preto',
-        //sex: 'Masculino'
+        image: 'fullmetal_alchemist.jpg',
+        name: 'Fullmetal Alchemist',
+        author: 'Hiromu Arakawa',
+        year: 2003
     },
     {
         type: 'anime',
-        image: 'golden.jpg',
-        name: 'Golden Retriever',
-        author: 'Amarelo',
-        //sex: 'Masculino'
+        image: 'death_note.jpg',
+        name: 'Death Note',
+        author: 'Tsugumi Ohba',
+        year: 2003
     },
     {
         type: 'anime',
-        image: 'poodle.jpg',
-        name: 'Poodle',
-        author: 'Branco',
-        //sex: 'Feminino'
+        image: 'my_hero_academia.jpg',
+        name: 'My Hero Academia',
+        author: 'Kohei Horikoshi    ',
+        year: 2014
     },
     {
         type: 'anime',
-        image: 'bulldog.jpg',
-        name: 'Bulldog',
-        author: 'Branco e Amarelo',
-        //sex: 'Masculino'
+        image: 'tokyo_ghoul.jpg',
+        name: 'Tokyo Ghoul',
+        author: 'Sui Ishida',
+        year: 2014
+    },
+    {
+        type: 'anime',
+        image: 'nanatsu_no_tazai.jpg',
+        name: 'The Seven Deadly Sins',
+        author: 'Nakaba Suzuki',
+        year: 2012
     },
     {
         type: 'serie',
-        image: 'persa.jpg',
-        name: 'Persa',
-        author: 'Amarelo',
-        //sex: 'Masculino'
+        image: 'startup.jpg',
+        name: 'StartUp',
+        author: 'Ben Ketai',
+        year: 2016
     },
     {
         type: 'serie',
-        image: 'mainecoon.jpg',
-        name: 'Maine Coon',
-        author: 'Preto e Branco',
-        //sex: 'Masculino'
+        image: 'game_of_thrones.jpg',
+        name: 'Game of Thrones',
+        author: 'George R. R. Martin',
+        year: 2011
     },
     {
         type: 'serie',
-        image: 'bengal.jpg',
-        name: 'Bengal',
-        author: 'Branco, Preto e Amarelo',
-        //sex: 'Feminino'
-    },
-    {
-        type: 'serie',
-        image: 'siames.jpg',
-        name: 'Siamês',
-        author: 'Amarelo e Preto',
-        //sex: 'Masculino'
-    },
-    {
-        type: 'serie',
-        image: 'sphynx.jpg',
-        name: 'Sphynx',
-        author: 'Branco',
-        //sex: 'Masculino'
-    },
-    {
-        type: 'movie',
-        image: 'neon.jpg',
-        name: 'Tetra Neon',
-        author: 'Vermelho e Azul',
-        //sex: 'Masculino'
-    },
-    {
-        type: 'movie',
-        image: 'matogrosso.jpg',
-        name: 'Mato Grosso',
-        author: 'Laranja',
-        //sex: 'Masculino'
-    },
-    {
-        type: 'movie',
-        image: 'limpavidro.jpg',
-        name: 'Limpa Vidro',
-        author: 'Verde e Branco',
-        //sex: 'Masculino'
-    },
-    {
-        type: 'movie',
-        image: 'tanictis.jpg',
-        name: 'Tanictis',
-        author: 'Vermelho',
-        //sex: 'Masculino'
-    },
-    {
-        type: 'movie',
         image: 'house-the-dragon.jpg',
-        name: 'A Casa do Dragão',
-        author: 'Preto',
-        //sex: 'Masculino'
+        name: 'House of the Dragon',
+        author: 'George R. R. Martin',
+        year: 2022
+    },
+    
+    {
+        type: 'serie',
+        image: 'la_casa_de_papel.jpg',
+        name: 'La Casa de Papel',
+        author: 'Álex Pina',
+        year: 2017
+    },
+    {
+        type: 'serie',
+        image: 'mandalorian.jpg',
+        name: 'The Mandalorian',
+        author: 'Jon Favreau',
+        year: 2019
+    },
+    {
+        type: 'serie',
+        image: 'mr_robot.jpg',
+        name: 'Mr. Robot',
+        author: 'Sam Esmail',
+        year: 2015
+    },
+    {
+        type: 'serie',
+        image: 'silicon_valley.jpg',
+        name: 'Silicon Valley',
+        author: 'Mike Judge',
+        year: 2014
+    },
+    {
+        type: 'movie',
+        image: 'snowden.jpg',
+        name: 'Snowden: Herói ou Traidor',
+        author: 'William Oliver Stone',
+        year: 2016
+    },
+    {
+        type: 'movie',
+        image: 'matrix.jpg',
+        name: 'Matrix',
+        author: 'The Wachowskis',
+        year: 1999
+    },
+    {
+        type: 'movie',
+        image: 'matrix_reloaded.jpg',
+        name: 'Matrix Reloaded',
+        author: 'The Wachowskis',
+        year: 2003
+    },
+    {
+        type: 'movie',
+        image: 'matrix_revolutions.jpg',
+        name: 'Matrix Revolutions',
+        author: 'The Wachowskis',
+        year: 2003
+    },
+    {
+        type: 'movie',
+        image: 'ameaca_fantasma.jpg',
+        name: 'A Ameaca Fantasma',
+        author: 'George Lucas',
+        year: 1999
+    },
+    {
+        type: 'movie',
+        image: 'ascensao_skywalker.jpg',
+        name: 'A Ascensao Skywalker',
+        author: 'George Lucas',
+        year: 2019
+    },
+    {
+        type: 'movie',
+        image: 'despertar_forca.jpg',
+        name: 'O Despertar da Força',
+        author: 'George Lucas',
+        year: 2015
+    },
+    {
+        type: 'movie',
+        image: 'rogue_one.jpg',
+        name: 'Rogue One',
+        author: 'George Lucas',
+        year: 2016
+    },
+    {
+        type: 'movie',
+        image: 'ultimos_jedi.jpg',
+        name: 'Os Ultimos Jedi',
+        author: 'George Lucas',
+        year: 2017
+    },
+    {
+        type: 'movie',
+        image: 'vinganca_sith.jpg',
+        name: 'A Vinganca dos Sith',
+        author: 'George Lucas',
+        year: 2005
     },
 ]
 
