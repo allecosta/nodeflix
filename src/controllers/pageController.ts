@@ -1,9 +1,9 @@
-import { Request,Response } from "express";
+import { Request, Response } from "express";
 import { CreateMenuObject } from "../helpers/createMenuObject";
 import { Category } from "../models/Categories";
  ''
 
- export const home = (req: Request, res:Response) => {
+export const home = (req:Request, res:Response) => {
     let list = Category.getAll();
 
     res.render('pages/page', {
@@ -16,10 +16,10 @@ import { Category } from "../models/Categories";
     });
 }
 
-export const animes = (req: Request, res:Response) => {
+export const animes = (req:Request, res:Response) => {
     let list = Category.getFromType('anime');
 
-     res.render('pages/page',{
+     res.render('pages/page', {
         menu: CreateMenuObject('anime'),
         banner: {
             title:'Animes',
@@ -29,7 +29,7 @@ export const animes = (req: Request, res:Response) => {
      });
 }
 
-export const series = (req: Request, res:Response) => {
+export const series = (req:Request, res:Response) => {
     let list = Category.getFromType('serie');
 
     res.render('pages/page', {
@@ -42,9 +42,10 @@ export const series = (req: Request, res:Response) => {
     });
 }
 
-export const movies = (req: Request, res:Response) => {
-    let list = Category.getFromType('movie')
-    res.render('pages/page',{
+export const movies = (req:Request, res:Response) => {
+    let list = Category.getFromType('movie');
+
+    res.render('pages/page', {
         menu: CreateMenuObject('movie'),
         banner: {
             title:'Filmes',
