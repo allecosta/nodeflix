@@ -23,7 +23,7 @@ export const animes = (req: Request, res:Response) => {
         menu: CreateMenuObject('anime'),
         banner: {
             title:'Animes',
-            background:'banner_dog.jpg'
+            background:'animes.jpg'
         },
         list
      });
@@ -36,7 +36,7 @@ export const series = (req: Request, res:Response) => {
         menu: CreateMenuObject('serie'),
         banner: {
             title:'Series',
-            background:'banner_cat.jpg'
+            background:'series.jpg'
         },
        list
     });
@@ -48,7 +48,7 @@ export const movies = (req: Request, res:Response) => {
         menu: CreateMenuObject('movie'),
         banner: {
             title:'Filmes',
-            background:'banner_fish.jpg'
+            background:'movies.jpg'
         },
        list
     });
